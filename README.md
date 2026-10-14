@@ -14,13 +14,7 @@ El programa arranca con un menú interactivo en la consola que permite elegir en
 2. **Consulta línea a línea:**
    - Diseñado para revisar las reservas de manera pausada y controlada.
    - Muestra en pantalla los datos detallados del pasajero actual y espera a que pulses **Enter** para pasar al siguiente registro, o que escribas `fin` para volver al menú principal.
-
-## Requisitos y ejecución
-
-- Tener instalado **Java JDK** en tu equipo.
-- Asegurarte de que el archivo con los datos (`MOCK_DATA_CON_CODIGO.csv`) está en la carpeta raíz del proyecto.
-- Ejecutar la clase principal `EjercicioDefinitivo.java` desde tu entorno de desarrollo habitual (como IntelliJ IDEA, Eclipse) o mediante la terminal.
-
+     
 ## Tecnologías utilizadas
 
 - **Java** (clases nativas para E/S de ficheros como `BufferedReader`, `PrintWriter`, `FileWriter` y `Scanner` para la interacción por consola).
