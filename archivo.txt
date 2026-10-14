@@ -1,0 +1,2 @@
+Línea 1: Hola desde Java
+Línea 2: Segunda línea de texto.
