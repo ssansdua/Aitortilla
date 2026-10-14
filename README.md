@@ -1,15 +1,27 @@
 # Gestor de Reservas AirTortilla
 
-Programa en Java para procesar un archivo CSV de reservas de vuelos, organizarlas y consultar la información de forma sencilla desde la consola.
+Aplicación desarrollada en Java para la gestión, procesamiento y consulta de reservas de vuelos a partir de un archivo CSV (`MOCK_DATA_CON_CODIGO.csv`). El programa organiza la información de los pasajeros, genera localizadores únicos y exporta los datos divididos por destino y fecha de forma automática.
 
-## Funciones
+## Cómo funciona
 
-El programa abre un menú con dos opciones principales:
+El programa arranca con un menú interactivo en la consola que permite elegir entre dos modalidades principales:
 
-1. **Generar archivos:** Lee el CSV entero, calcula un localizador único para cada pasajero y va creando o actualizando los archivos de salida separados por país y fecha (con el formato `AirTortilla_XX_YYYY_MM_DD.csv`).
-2. **Consultar línea a línea:** Muestra las reservas una por una por pantalla. Tienes que pulsar Enter para ver la siguiente o escribir 'fin' si quieres salir de la consulta.
+1. **Generación masiva de archivos:**
+   - Lee el CSV registro a registro.
+   - Crea un localizador inequívoco para cada pasajero combinando su código ISO, su ID y su nombre.
+   - Genera archivos de salida independientes (o los actualiza si ya existen) utilizando el formato obligatorio: `AirTortilla_XX_YYYY_MM_DD.csv` (donde `XX` es el código ISO del país y la fecha corresponde al día del vuelo).
 
-## Lo que usa
+2. **Consulta línea a línea:**
+   - Diseñado para revisar las reservas de manera pausada y controlada.
+   - Muestra en pantalla los datos detallados del pasajero actual y espera a que pulses **Enter** para pasar al siguiente registro, o que escribas `fin` para volver al menú principal.
 
-- Java básico (con `BufferedReader`, `PrintWriter` y `Scanner` para la consola).
-- Archivos CSV para la entrada y salida de datos.
+## Requisitos y ejecución
+
+- Tener instalado **Java JDK** en tu equipo.
+- Asegurarte de que el archivo con los datos (`MOCK_DATA_CON_CODIGO.csv`) está en la carpeta raíz del proyecto.
+- Ejecutar la clase principal `EjercicioDefinitivo.java` desde tu entorno de desarrollo habitual (como IntelliJ IDEA, Eclipse) o mediante la terminal.
+
+## Tecnologías utilizadas
+
+- **Java** (clases nativas para E/S de ficheros como `BufferedReader`, `PrintWriter`, `FileWriter` y `Scanner` para la interacción por consola).
+- **CSV** para el almacenamiento estructurado de los datos de entrada y salida.
